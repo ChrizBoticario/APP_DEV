@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    animation: slideRight 0.5s ease-in-out;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.button {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    gap: 10px; /* vertical spacing between products */
+}
+
+/* product-links are the clickable image and names in the home page*/
+.product-link {
+    display: flex;              /* Use flexbox for image + text */
+    align-items: center;        /* Vertically center image and name */
+    gap: 10px;                  /* Space between image and text */
+    width: 100%;                /* Take full container width */
+    margin: 10px 0;             /* Vertical spacing between products */
+    text-decoration: none;
+    color: black;
+}
+
+.product-link img {
+    width: 80px;                
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #ccc;
+}
+
+.product-link span {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.product-link:hover {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.description-box select, .description-box input { 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 10px; 
+}
+
+/* Slide animation on navigation */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+/* Footer style */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #eee;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
